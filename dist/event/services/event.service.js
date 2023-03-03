@@ -19,9 +19,6 @@ const typeorm_2 = require("typeorm");
 const event_entity_1 = require("../entity/event.entity");
 const class_transformer_1 = require("class-transformer");
 let EventService = class EventService {
-    createEvent(eventDto) {
-        throw new Error("Method not implemented.");
-    }
     constructor(eventRepository) {
         this.eventRepository = eventRepository;
     }

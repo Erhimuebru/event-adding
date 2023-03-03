@@ -3,7 +3,6 @@ import { EventEntity } from "../entity/event.entity";
 import { EventDto } from "../dto/event.dto";
 export declare class EventService {
     private readonly eventRepository;
-    createEvent(eventDto: EventDto): void;
     constructor(eventRepository: Repository<EventEntity>);
     findAll(): Promise<EventDto[]>;
     toDto(event: EventEntity): any;

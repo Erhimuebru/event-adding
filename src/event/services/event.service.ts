@@ -7,9 +7,6 @@ import { plainToClass } from "class-transformer";
 
 @Injectable()
 export class EventService {
-  createEvent(eventDto: EventDto) {
-    throw new Error("Method not implemented.");
-  }
   constructor(
     @InjectRepository(EventEntity)
     private readonly eventRepository: Repository<EventEntity>
@@ -33,11 +30,11 @@ export class EventService {
     return await this.eventRepository.save(event);
   }
 
-  //   async create(eventDto: EventDto): Promise<EventDto> {
-  //     const event = this.eventRepository.create(eventDto);
-  //     await this.eventRepository.save(event);
-  //     return this.toDto(event);
-  //   }
+  // async create(eventDto: EventDto): Promise<EventDto> {
+  //   const event = this.eventRepository.create(eventDto);
+  //   await this.eventRepository.save(event);
+  //   return this.toDto(event);
+  // }
 
   //   async update(id: number, userDto: UserDto): Promise<UserDto> {
   //     await this.userRepository.update(id, userDto);
@@ -47,14 +44,5 @@ export class EventService {
 
   //   async delete(id: number): Promise<void> {
   //     await this.userRepository.delete(id);
-  //   }
-
-  //   private toDto(event: EventEntity): EventDto {
-  //     return {
-  //       id: user.id,
-  //       firstName: user.firstName,
-  //       lastName: user.lastName,
-  //       email: user.email,
-  //     };
   //   }
 }
