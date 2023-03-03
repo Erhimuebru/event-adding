@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { FindOneOptions, Repository } from "typeorm";
-import { EventEntity } from "./event.entity";
-import { EventDto } from "./event.dto";
+import { EventEntity } from "../entity/event.entity";
+import { EventDto } from "../dto/event.dto";
 import { plainToClass } from "class-transformer";
 
 @Injectable()

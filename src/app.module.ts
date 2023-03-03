@@ -3,8 +3,8 @@ import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { EventsModule } from "./event/event.module";
-import { EventEntity } from "./event/event.entity";
+import { EventsModule } from "./event/module/event.module";
+import { EventEntity } from "./event/entity/event.entity";
 
 @Module({
   imports: [

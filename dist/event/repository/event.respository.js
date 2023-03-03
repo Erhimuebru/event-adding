@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EventRepository = void 0;
 const typeorm_1 = require("typeorm");
-const event_entity_1 = require("./entity/event.entity");
+const event_entity_1 = require("../entity/event.entity");
 let EventRepository = class EventRepository extends typeorm_1.Repository {
 };
 EventRepository = __decorate([

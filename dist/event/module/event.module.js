@@ -9,9 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EventsModule = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
-const event_controller_1 = require("./controller/event.controller");
-const event_service_1 = require("./event.service");
-const event_entity_1 = require("./entity/event.entity");
+const event_controller_1 = require("../controller/event.controller");
+const event_service_1 = require("../services/event.service");
+const event_entity_1 = require("../entity/event.entity");
 let EventsModule = class EventsModule {
 };
 EventsModule = __decorate([

@@ -16,7 +16,7 @@ exports.EventService = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
-const event_entity_1 = require("./entity/event.entity");
+const event_entity_1 = require("../entity/event.entity");
 const class_transformer_1 = require("class-transformer");
 let EventService = class EventService {
     createEvent(eventDto) {

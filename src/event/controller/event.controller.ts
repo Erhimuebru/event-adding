@@ -9,8 +9,8 @@ import {
   UsePipes,
   ValidationPipe,
 } from "@nestjs/common";
-import { EventService } from "./event.service";
-import { EventDto } from "./event.dto";
+import { EventService } from "../services/event.service";
+import { EventDto } from "../dto/event.dto";
 
 @Controller("events")
 export class EventController {

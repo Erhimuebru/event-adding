@@ -1,6 +1,6 @@
 import { FindOneOptions, Repository } from "typeorm";
-import { EventEntity } from "./entity/event.entity";
-import { EventDto } from "./dto/event.dto";
+import { EventEntity } from "../entity/event.entity";
+import { EventDto } from "../dto/event.dto";
 export declare class EventService {
     private readonly eventRepository;
     createEvent(eventDto: EventDto): void;

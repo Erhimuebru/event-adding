@@ -12,8 +12,8 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const config_1 = require("@nestjs/config");
 const typeorm_1 = require("@nestjs/typeorm");
-const event_module_1 = require("./event/event.module");
-const event_entity_1 = require("./event/event.entity");
+const event_module_1 = require("./event/module/event.module");
+const event_entity_1 = require("./event/entity/event.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
