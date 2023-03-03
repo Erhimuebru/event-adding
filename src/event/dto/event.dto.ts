@@ -22,16 +22,16 @@ export class EventDto {
   month: string;
 
   @IsNotEmpty()
-  @IsNumber()
-  date: number;
+  @IsString()
+  date: string;
 
   @IsNotEmpty()
   @IsString()
   time: string;
 
   @IsNotEmpty()
-  @IsNumber()
-  year: number;
+  @IsString()
+  year: string;
 
   @IsNotEmpty()
   @IsString()

@@ -14,22 +14,25 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EventController = void 0;
 const common_1 = require("@nestjs/common");
-const event_service_1 = require("../services/event.service");
+const platform_express_1 = require("@nestjs/platform-express");
 const event_dto_1 = require("../dto/event.dto");
+const event_service_1 = require("../services/event.service");
 let EventController = class EventController {
     constructor(eventService) {
         this.eventService = eventService;
     }
-    async create(eventDto) {
+    async create(file, eventDto) {
         return this.eventService.create(eventDto);
     }
 };
 __decorate([
     (0, common_1.Post)(),
     (0, common_1.UsePipes)(common_1.ValidationPipe),
-    __param(0, (0, common_1.Body)()),
+    (0, common_1.UseInterceptors)((0, platform_express_1.FileInterceptor)("image")),
+    __param(0, (0, common_1.UploadedFile)()),
+    __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [event_dto_1.EventDto]),
+    __metadata("design:paramtypes", [Object, event_dto_1.EventDto]),
     __metadata("design:returntype", Promise)
 ], EventController.prototype, "create", null);
 EventController = __decorate([

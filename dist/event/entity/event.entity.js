@@ -35,7 +35,7 @@ __decorate([
 ], EventEntity.prototype, "month", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], EventEntity.prototype, "date", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
@@ -43,7 +43,7 @@ __decorate([
 ], EventEntity.prototype, "time", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], EventEntity.prototype, "year", void 0);
 __decorate([
     (0, typeorm_1.Column)(),

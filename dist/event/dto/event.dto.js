@@ -40,8 +40,8 @@ __decorate([
 ], EventDto.prototype, "month", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
 ], EventDto.prototype, "date", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
@@ -50,8 +50,8 @@ __decorate([
 ], EventDto.prototype, "time", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
 ], EventDto.prototype, "year", void 0);
 __decorate([
     (0, class_validator_1.IsNotEmpty)(),

@@ -4,8 +4,8 @@ export declare class EventEntity {
     name: string;
     description: string;
     month: string;
-    date: number;
+    date: string;
     time: string;
-    year: number;
+    year: string;
     image: string;
 }

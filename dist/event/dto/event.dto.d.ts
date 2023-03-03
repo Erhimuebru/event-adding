@@ -4,8 +4,8 @@ export declare class EventDto {
     name: string;
     description: string;
     month: string;
-    date: number;
+    date: string;
     time: string;
-    year: number;
+    year: string;
     image: string;
 }

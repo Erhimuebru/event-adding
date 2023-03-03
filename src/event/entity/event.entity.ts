@@ -20,13 +20,13 @@ export class EventEntity {
   month: string;
 
   @Column()
-  date: number;
+  date: string;
 
   @Column()
   time: string;
 
   @Column()
-  year: number;
+  year: string;
 
   @Column()
   image: string;
