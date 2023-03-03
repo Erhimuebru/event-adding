@@ -12,6 +12,8 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const config_1 = require("@nestjs/config");
 const typeorm_1 = require("@nestjs/typeorm");
+const event_module_1 = require("./event/event.module");
+const event_entity_1 = require("./event/event.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -19,15 +21,16 @@ AppModule = __decorate([
         imports: [
             config_1.ConfigModule.forRoot({ isGlobal: true }),
             typeorm_1.TypeOrmModule.forRoot({
-                type: 'postgres',
+                type: "postgres",
                 host: process.env.POSTGRES_HOST,
                 port: parseInt(process.env.POSTGRES_PORT),
                 database: process.env.POSTGRES_DATABASE,
                 username: process.env.POSTGRES_USER,
                 password: process.env.POSTGRES_PASSWORD,
-                entities: [],
+                entities: [event_entity_1.EventEntity],
                 synchronize: true,
             }),
+            event_module_1.EventsModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
